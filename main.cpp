@@ -7,7 +7,7 @@ bool isPerfect(const uint n) {
     const uint sqrtN = static_cast<uint>(sqrt(n));
     for (uint i = 2; i <= sqrtN; i++) {
         if (n % i == 0) {
-            sum += 1;
+            sum += i;
             if (const uint nByI = n / i; nByI != i) {
                 sum += nByI;
             }
